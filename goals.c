@@ -102,258 +102,158 @@ int main () {
   }
 
   printf("\n                                               ★★★★                                               \n");
-  printf("\nOm te evalueren of je op de goede weg bent kun je de stappen tussentijdse comments toevoegen aan voornemen!.\n");
-
-    struct progress {
-        char *subgoal;
-        char *comments;
-    };
-
-    //     switch(Steps) {
-
-    //     case 0:
-    //         struct progress subg1;
-    //         subg1.subgoal = strings[Steps];
-    //     break;
 	
-    //     case 1:
-    //         struct progress subg2;
-    //         subg2.subgoal = strings[Steps];
-    //     break;
+  printf("Helaas dit onderdeel is nog niet beschikbaar er wordt nog actief aan gewerkt.");
+//   printf("\nOm te evalueren of je op de goede weg bent kun je de stappen tussentijdse comments toevoegen aan voornemen!.\n");
 
-    //     case 2:
-    //         struct progress subg3;
-    //         subg3.subgoal = strings[Steps];
-    //     break;
 
-    //     case 3:
-    //         struct progress subg4;
-    //         subg4.subgoal = strings[Steps];
-    //     break;
+//     struct progress {
+//         char *subgoal;
+//         char *comments;
+//     };
 
-    //     case 4:
-    //         struct progress subg5;
-    //         subg5.subgoal = strings[Steps];
-    //     break; 
+//     while (strcmp(exit_string, input) != 0) {
 
-    //     case 5:
-    //         struct progress subg6;
-    //         subg6.subgoal = strings[Steps];
-    //     break; 
+//         char *input, *keuze;
+//         printf("Het programma loopt stap voor stap door de opgegeven subdoelen heen, om te stoppen voer in: \"EXIT\" Ga door (y/n)");
+//         scanf("%s", input);
+
+//         // ?? pointers
+//         printf("Welkom in het keuze menu, dit zijn je subdoelen:");
+//         for (i = 0; i < Steps; i++) {
+//            fprintf(" %2d%-2.10s   %-70.50s \n",i + 1," ",strings[i]);
+//         }
+
+//         // structuur aanmaken voor ieder van de subdoelen
         
-    //     case 6:
-    //         struct progress subg7;
-    //         subg7.subgoal = strings[Steps];
-    //     break; 
+//         switch(Steps) {
+//         int nComments;
+//         // int i = 0;
+//         char comments[MAX_STRINGS][STRING_LENGTH];
 
-    //     case 7:
-    //         struct progress subg8;
-    //         subg8.subgoal = strings[Steps];
-    //     break; 
-
-    //     case 8:
-    //         struct progress subg9;
-    //         subg9.subgoal = strings[Steps];
-    //     break; 
-  
-    //     case 9:
-    //         struct progress subg10;
-    //         subg10.subgoal = strings[Steps];
-    //     break; 
-    // }
-
-
-    // char *input, *keuze;
-    // printf("Het programma loopt stap voor stap door de opgegeven subdoelen heen, om te stoppen voer in: \"EXIT\" Ga door (y/n)");
-    // scanf("%s", input);
- 
-
-    while (strcmp(exit_string, input) != 0) {
-
-        char *input, *keuze;
-        printf("Het programma loopt stap voor stap door de opgegeven subdoelen heen, om te stoppen voer in: \"EXIT\" Ga door (y/n)");
-        scanf("%s", input);
-
-        // ?? pointers
-        printf("Welkom in het keuze menu, dit zijn je subdoelen:");
-        for (i = 0; i < Steps; i++) {
-           fprintf(" %2d%-2.10s   %-70.50s \n",i + 1," ",strings[i]);
-        }
-
-        // structuur aanmaken voor ieder van de subdoelen
-        
-        switch(Steps) {
-        int nComments;
-        // int i = 0;
-        char comments[MAX_STRINGS][STRING_LENGTH];
-
-        case 0:
-            struct progress subg1;
-            subg1.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg1.comments[i]);
-            }   
-        break;
+//         case 0:
+//             struct progress subg1;
+//             subg1.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg1.comments[i]);
+//             }   
+//         break;
 	
-        case 1:
-            struct progress subg2;
-            subg2.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg2.comments[i]);
-            }
-        break;
+//         case 1:
+//             struct progress subg2;
+//             subg2.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg2.comments[i]);
+//             }
+//         break;
 
-        case 2:
-            struct progress subg3;
-            subg3.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg3.comments[i]);
-            }
-        break;
+//         case 2:
+//             struct progress subg3;
+//             subg3.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg3.comments[i]);
+//             }
+//         break;
 
-        case 3:
-            struct progress subg4;
-            subg4.subgoal = strings[Steps];
-               fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg4.comments[i]);
-            }
-        break;
+//         case 3:
+//             struct progress subg4;
+//             subg4.subgoal = strings[Steps];
+//                fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg4.comments[i]);
+//             }
+//         break;
 
-        case 4:
-            struct progress subg5;
-            subg5.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg5.comments[i]);
-            }
-        break; 
+//         case 4:
+//             struct progress subg5;
+//             subg5.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg5.comments[i]);
+//             }
+//         break; 
 
-        case 5:
-            struct progress subg6;
-            subg6.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg6.comments[i]);
-            }
-        break; 
+//         case 5:
+//             struct progress subg6;
+//             subg6.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg6.comments[i]);
+//             }
+//         break; 
         
-        case 6:
-            struct progress subg7;
-            subg7.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg7.comments[i]);
-            }
-        break; 
+//         case 6:
+//             struct progress subg7;
+//             subg7.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg7.comments[i]);
+//             }
+//         break; 
 
-        case 7:
-            struct progress subg8;
-            subg8.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg8.comments[i]);
-            }
-        break; 
+//         case 7:
+//             struct progress subg8;
+//             subg8.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg8.comments[i]);
+//             }
+//         break; 
 
-        case 8:
-            struct progress subg9;
-            subg9.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg9.comments[i]);
-            }
-        break; 
+//         case 8:
+//             struct progress subg9;
+//             subg9.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg9.comments[i]);
+//             }
+//         break; 
   
-        case 9:
-            struct progress subg10;
-            subg10.subgoal = strings[Steps];
-            fflush(stdin);
-            printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
-            scanf("%d", &nComments);
-            for (i = 0; i < nComments; i++) {
-           	getchar(); //uitlezen van string + lege karakter eind.
-		    scanf("%[^\n]s", subg10.comments[i]);
-            }
-        break; 
-        }
+//         case 9:
+//             struct progress subg10;
+//             subg10.subgoal = strings[Steps];
+//             fflush(stdin);
+//             printf("Hoeveel comments wil je toevoegen aan \'%s\'? : ", strings[Steps]);
+//             scanf("%d", &nComments);
+//             for (i = 0; i < nComments; i++) {
+//            	getchar(); //uitlezen van string + lege karakter eind.
+// 		    scanf("%[^\n]s", subg10.comments[i]);
+//             }
+//         break; 
+//         }
     
-    }
+//     }             
 
-    // char *addcomments (char *var) {
-         
-	//     for(int j = 0; j < sizeof(var.subgoal); j++) {
-            
-    //         printf("| %2d%-2.10s |  %-50.50s |\n", j + 1," ", var.subgoal[i]);
-	//     }
- 
-
-
-    //     printf("\'%s\'", var.subgoal);
-    //     fflush(stdin);
-    //     printf("Wil je opmerkingen/resultaten van deze stap toevoegen? (y/n)");
-    //     scanf("%c", keuze);
-
-    //     if (i == Steps - 1) {
-    //          break;   
-    //     } else if (keuze == "n") {
-    //         continue;
-    //     }
-    //     else {
-    //         printf("Voer opmerking in: ");
-
-    //         do 
-    //         {
-    //             ch = getchar();
-    //             comments[c]=ch;
-    //             c++;
-    //         }while(ch != '\n');
-    //         c=c-1; // nullbit toevoegen eind.
-    //         comments[c]='\0';
-		    
-    //         var.comments = comments;
-    //     }
-
-    //     printf("OVERZICHT %s", var.subgoal);
-      
-    //     for (int j = 0; j < sizeof(var.comments); j++) {
-    //         printf("%s",var.comments);
-    //     }
-    //     return var.comments;
-    // }
-              
-
-    
     // Eind programma
     return 0;
 
